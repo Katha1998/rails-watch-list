@@ -4,6 +4,6 @@
 <ul>
   <% @lists.each do |list| %>
 <!-- .name can be accessed as restaurant data is in a hash format -->
-    <li><%= list.name %></li>
+    <li><%= link_to list.name, list_path(list) %></li>
   <% end %>
 </ul>
